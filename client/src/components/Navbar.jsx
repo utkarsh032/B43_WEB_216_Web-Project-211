@@ -11,7 +11,7 @@ const dividerStyles = 'h-2 w-10 border border-l-0 border-r-0';
 
 const navLinks = [
   { to: '/about', text: 'About' },
-  { to: '/technology', text: 'Technology' },
+  { to: '/exchange', text: 'Exchange' },
   { to: '/services', text: 'Services' },
   { to: '/support', text: 'Support' },
 ];
@@ -27,7 +27,9 @@ function Navbar() {
       <div className='flex items-center'>
         {/* Logo */}
         <div className=''>
-          <img src={Logo} alt="Travel & Resort Logo" className='h-20 border rounded-full' />
+          <Link to='/'>
+            <img src={Logo} alt="Travel & Resort Logo" className='h-20 border rounded-full' />
+          </Link>
         </div>
         <div className={dividerStyles}></div>
         {/* NavLinks */}

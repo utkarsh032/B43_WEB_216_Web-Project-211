@@ -1,6 +1,7 @@
 import React from 'react'
 import Hashtags from './Hashtags'
 import Hero from '../assets/Hero.png'
+import CurrencyConverter from '../pages/CurrencyConverter/CurrencyConverter'
 
 function Home() {
   return (

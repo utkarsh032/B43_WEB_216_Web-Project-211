@@ -17,8 +17,8 @@ const navLinks = [
 ];
 
 const authButtons = [
-  { text: 'Login', onClick: () => console.log('Login clicked') },
-  { text: 'Signup', onClick: () => console.log('Signup clicked') },
+  { path: '/signin', text: 'Login', onClick: () => console.log('Login clicked') },
+  { path: '/signup', text: 'Signup', onClick: () => console.log('Signup clicked') },
 ];
 
 function Navbar() {
@@ -52,13 +52,14 @@ function Navbar() {
       <div className='flex items-center border rounded-3xl px-6 py-2'>
         {authButtons.map((button, index) => (
           <React.Fragment key={button.text}>
-            <button
-              className={authButtonStyles(button.text === 'Login')} // Apply conditional styling
+            <Link
+              to={button.path}
+              className={authButtonStyles(button.text === 'Login')}
               onClick={button.onClick}
               aria-label={button.text}
             >
               {button.text}
-            </button>
+            </Link>
             {index < authButtons.length - 1 && <div className={dividerStyles} />}
           </React.Fragment>
         ))}

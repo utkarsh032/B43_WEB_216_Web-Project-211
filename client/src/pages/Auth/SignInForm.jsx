@@ -24,10 +24,8 @@ export default function SignInForm() {
     try {
       const response = await axios.post('http://localhost:3000/api/signin', formData);
       console.log('Response:', response.data);
-      alert('Signin successful!');
     } catch (error) {
       console.error('Error:', error.response?.data || error.message);
-      alert('Signin failed!');
     }
   };
 

@@ -8,11 +8,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa6";
 
 export default function SignUpForm() {
-  const [formData, setFormData] = useState({
-    username: '',
-    email: '',
-    password: ''
-  });
+  const [formData, setFormData] = useState({ username: '', email: '', password: '' });
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -25,10 +21,8 @@ export default function SignUpForm() {
     try {
       const response = await axios.post('http://localhost:3000/api/signup', formData);
       console.log('Response:', response.data);
-      alert('Signup successful!');
     } catch (error) {
       console.error('Error:', error.response?.data || error.message);
-      alert('Signup failed!');
     }
   };
 

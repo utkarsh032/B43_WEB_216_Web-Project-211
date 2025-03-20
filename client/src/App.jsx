@@ -1,21 +1,33 @@
 import './App.css';
-import Home from './components/Home';
-import Navbar from './components/Navbar';
 import { Route, Routes } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import CurrencyConverter from './pages/CurrencyConverter/CurrencyConverter';
+import TravelStories from './components/TravelStories';
+import About from './components/About';
 import SignUpForm from './pages/Auth/SignUpForm';
 import SignInForm from './pages/Auth/SignInForm';
-import CurrencyConverter from './pages/CurrencyConverter/CurrencyConverter';
+import MainLayout from './MainLayout';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        {/* Main layout with multiple components */}
+        <Route
+          path="/"
+          element={<MainLayout />}
+        />
+        {/* Individual routes */}
         <Route path="/exchange" element={<CurrencyConverter />} />
+        <Route path="/travel" element={<TravelStories />} />
+        <Route path="/about" element={<About />} />
         <Route path="/signup" element={<SignUpForm />} />
         <Route path="/signin" element={<SignInForm />} />
       </Routes>
+      <Footer />
     </>
   );
 }

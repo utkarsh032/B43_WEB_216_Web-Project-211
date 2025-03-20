@@ -91,11 +91,11 @@ const CurrencyConverter = () => {
       initial={{ opacity: 0, scale: 0.9 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.5 }}
-      className="bg-[#121212] text-white p-6 flex flex-col items-center"
+      className="bg-[#121212] text-white px-20 flex flex-col items-center"
     >
       <div className="w-full flex justify-center items-center gap-6">
 
-        <div className="mb-4  w-1/2">
+        <div className="mb-4  w-1/2 p-8">
           <div className="border border-gray-700 rounded-lg overflow-hidden mb-4">
             <div className="flex">
               <input
@@ -165,7 +165,7 @@ const CurrencyConverter = () => {
           </div>
         </div>
 
-        <div className=" w-1/2">
+        <div className=" w-1/2 p-8">
           <div className="flex justify-between items-center mb-2">
             <h1 className="text-lg text-gray-400">
               {amount} {fromCurrency} equals

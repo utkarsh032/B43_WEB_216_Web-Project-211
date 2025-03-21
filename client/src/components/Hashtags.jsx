@@ -42,8 +42,8 @@ export default function Hashtags() {
 
       {/* Stats Section */}
       <div className="bg-white text-black px-6 py-12 font-mono">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 text-left">
-          <div className="space-y-4">
+        <div className="flex gap-8 text-left">
+          <div className="space-y-4  w-1/2">
             <h2 className="text-xl font-bold">JOIN US,</h2>
             <h2 className="text-xl font-bold">SHARE GREAT PLACES,</h2>
             <h2 className="text-xl font-bold">EXPLORE THE WORLD TOGETHER.</h2>
@@ -69,11 +69,11 @@ export default function Hashtags() {
             </div>
           </div>
 
-          <div className="space-y-6">
+          <div className="space-y-6 w-1/2">
             <h2 className="text-2xl font-bold">Join The Teams</h2>
 
-            <div className="flex items-start space-x-4">
-              <div className="bg-[#f8f8f8] rounded-lg p-4 flex-1">
+            <div className="flex gap-4 items-start space-x-4">
+              <div className="bg-[#f8f8f8] rounded-lg p-4 w-2/3">
                 <p className="text-sm">
                   In our application, you can involve your friends in a joint trip, or join an already created group
                   and together plan and improve your ideal holiday itinerary.

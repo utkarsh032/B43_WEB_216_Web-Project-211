@@ -4,6 +4,7 @@ import cors from "cors";
 import { dbConnection } from "./config/dbConnection.js";
 import UserRouter from "./API/routes/UserRoutes.js";
 import QuestionsRoutes from "./API/routes/FaqsRoutes.js";
+import TripRouter from "./API/routes/TripsRoutes.js";
 
 const PORT = process.env.PORT || 3000
 
@@ -25,6 +26,8 @@ dbConnection()
 app.use('/api', UserRouter)
 
 app.use('/', QuestionsRoutes)
+
+app.use('/', TripRouter)
 
 // Server Listing
 app.listen(PORT, () => {

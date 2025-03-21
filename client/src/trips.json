@@ -1,0 +1,212 @@
+[
+  {
+    "name": "Romantic Gateway in Paris",
+    "country": "France",
+    "type": "Honeymoon",
+    "duration": "7 days",
+    "image": "https://i0.wp.com/www.theparisphotographer.com/wp-content/uploads/2013/12/Romantic-things-to-do-in-Paris-a-Paris-photo-shoot.jpg?resize=1000%2C667&quality=100&ssl=1",
+    "price": 2500,
+    "rating": 4.8,
+    "feedback": "Amazing experience, would definitely recommend!"
+  },
+  {
+    "name": "Japanese Cherry Blossom Tour",
+    "country": "Japan",
+    "type": "Group Trip",
+    "duration": "10 days",
+    "image": "https://d1wv60jaas5mse.cloudfront.net/images/uploads/production/post_images/9270d1f8411607_AdobeStock_291231209.jpeg",
+    "price": 3200,
+    "rating": 4.9,
+    "feedback": "Breathtaking scenery and wonderful culture."
+  },
+  {
+    "name": "Beach Escape in Goa",
+    "country": "India",
+    "type": "Short Trip",
+    "duration": "4 days",
+    "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/51/36/20/noah-goa-picture-perfect.jpg?w=900&h=500&s=1",
+    "price": 1200,
+    "rating": 4.5,
+    "feedback": "Relaxing and fun with beautiful beaches."
+  },
+  {
+    "name": "Sri Lankan Adventure",
+    "country": "Sri Lanka",
+    "type": "Long Trip",
+    "duration": "14 days",
+    "image": "https://bmkltsly13vb.compat.objectstorage.ap-mumbai-1.oraclecloud.com/cdn.ft.lk/assets/uploads/image_d3bb768cbe.jpg",
+    "price": 4500,
+    "rating": 4.7,
+    "feedback": "Amazing wildlife and beautiful landscapes."
+  },
+  {
+    "name": "Maldives Luxury Escape",
+    "country": "Maldives",
+    "type": "Honeymoon",
+    "duration": "6 days",
+    "image": "https://images.luxuryescapes.com/q_auto:good/a4y9v7nvagfrxtovbauc",
+    "price": 5000,
+    "rating": 4.9,
+    "feedback": "A perfect romantic getaway with stunning overwater villas."
+  },
+  {
+    "name": "Dubai Desert Safari",
+    "country": "UAE",
+    "type": "Short Trip",
+    "duration": "3 days",
+    "image": "https://quadbike-dubai.com/wp-content/uploads/2021/10/Quad-Bike-e1696348612565.jpg",
+    "price": 1500,
+    "rating": 4.6,
+    "feedback": "Thrilling adventure with camel rides and dune bashing."
+  },
+  {
+    "name": "Italian Cultural Delight",
+    "country": "Italy",
+    "type": "Group Trip",
+    "duration": "8 days",
+    "image": "https://media.licdn.com/dms/image/v2/D4D12AQFJKw1Wo5vTLw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1694438923477?e=2147483647&v=beta&t=bC45VtpNZZLndqys0mmW5t4IH1BumpRTX_11mUWTOyM",
+    "price": 2800,
+    "rating": 4.8,
+    "feedback": "Rich in history and culture with delicious cuisine."
+  },
+  {
+    "name": "Swiss Alps Expedition",
+    "country": "Switzerland",
+    "type": "Long Trip",
+    "duration": "12 days",
+    "image": "https://overlandsummers.com/wp-content/uploads/2023/04/alps.jpg",
+    "price": 6000,
+    "rating": 4.9,
+    "feedback": "Stunning mountain views and amazing skiing experience."
+  },
+  {
+    "name": "Bali Tropical Retreat",
+    "country": "Indonesia",
+    "type": "Honeymoon",
+    "duration": "5 days",
+    "image": "https://luxnomade.com/wp-content/uploads/2019/11/The-Villas-Interior_03.jpg",
+    "price": 1800,
+    "rating": 4.7,
+    "feedback": "Beautiful beaches and luxurious resorts."
+  },
+  {
+    "name": "New York City Explorer",
+    "country": "USA",
+    "type": "Group Trip",
+    "duration": "6 days",
+    "image": "https://d32ijn7u0aqfv4.cloudfront.net/wp/wp-content/uploads/raw/SOCC0223019_780x440_mobile.jpg",
+    "price": 2200,
+    "rating": 4.6,
+    "feedback": "Iconic landmarks and great shopping experience."
+  },
+  {
+    "name": "Australian Outback Adventure",
+    "country": "Australia",
+    "type": "Long Trip",
+    "duration": "15 days",
+    "image": "https://example.com/images/australia.jpg",
+    "price": 5200,
+    "rating": 4.9,
+    "feedback": "Incredible wildlife and scenic landscapes."
+  },
+  {
+    "name": "Alaskan Wilderness Expedition",
+    "country": "USA",
+    "type": "Adventure",
+    "duration": "10 days",
+    "image": "https://www.contiki.com/media/rhdlw0lg/the-outback-trips-travel-guide.jpg",
+    "price": 4500,
+    "rating": 4.8,
+    "feedback": "Breathtaking glaciers and wildlife encounters."
+  },
+  {
+    "name": "London Royal Tour",
+    "country": "UK",
+    "type": "Short Trip",
+    "duration": "4 days",
+    "image": "https://evanevanstours.com/media/6972/royal-london-tour-with-river-cruise-option-2-evan-evans-tours-buckingham-palace.jpg",
+    "price": 1900,
+    "rating": 4.7,
+    "feedback": "Historical sites and royal landmarks."
+  },
+  {
+    "name": "Thailand Island Hopping",
+    "country": "Thailand",
+    "type": "Group Trip",
+    "duration": "7 days",
+    "image": "https://www.expatsholidays.com/wp-content/uploads/2024/06/thailand-island-hopping.jpeg",
+    "price": 2500,
+    "rating": 4.5,
+    "feedback": "Stunning beaches and vibrant nightlife."
+  },
+  {
+    "name": "Patagonia Hiking Expedition",
+    "country": "Chile",
+    "type": "Adventure",
+    "duration": "14 days",
+    "image": "https://www.nationalgeographic.com/content/dam/expeditions/destinations/south-america/active/Patagonia-Hiking-Adventure/Hero-hiking-patagonia-adventure.jpg",
+    "price": 5400,
+    "rating": 4.9,
+    "feedback": "Challenging hikes with spectacular views."
+  },
+  {
+    "name": "Canadian Rockies Road Trip",
+    "country": "Canada",
+    "type": "Long Trip",
+    "duration": "12 days",
+    "image": "https://whereintheworldisnina.com/wp-content/uploads/2021/12/icefields-parkway-banff-national-park.jpeg",
+    "price": 4800,
+    "rating": 4.8,
+    "feedback": "Scenic drives and breathtaking mountains."
+  },
+  {
+    "name": "Egyptian Pyramid Explorer",
+    "country": "Egypt",
+    "type": "Historical",
+    "duration": "6 days",
+    "image": "https://www.exploreegypttours.com/wp-content/uploads/2022/10/Giza-Necropolis-Explore-Egypt-Tours.jpg",
+    "price": 2100,
+    "rating": 4.7,
+    "feedback": "Fascinating ancient wonders."
+  },
+  {
+    "name": "Greek Island Odyssey",
+    "country": "Greece",
+    "type": "Honeymoon",
+    "duration": "8 days",
+    "image": "https://www.classadventuretravel.com/wp-content/uploads/2016/04/shutterstock_70924930.jpg",
+    "price": 3100,
+    "rating": 4.9,
+    "feedback": "Beautiful islands and romantic sunsets."
+  },
+  {
+    "name": "Peruvian Inca Trail",
+    "country": "Peru",
+    "type": "Adventure",
+    "duration": "7 days",
+    "image": "https://www.intrepidtravel.com/adventures/wp-content/uploads/2018/08/Intrepid-Travel-Peru_Inca_trail_machu_picchu_trek_007.jpg",
+    "price": 3200,
+    "rating": 4.8,
+    "feedback": "Incredible ruins and trekking experience."
+  },
+  {
+    "name": "Vietnam Cultural Experience",
+    "country": "Vietnam",
+    "type": "Group Trip",
+    "duration": "9 days",
+    "image": "https://localvietnam.com/wp-content/uploads/2019/06/culture-hoi-an-1024x569.jpg",
+    "price": 2700,
+    "rating": 4.6,
+    "feedback": "Rich culture and delicious food."
+  },
+  {
+    "name": "Iceland Northern Lights",
+    "country": "Iceland",
+    "type": "Adventure",
+    "duration": "5 days",
+    "image": "https://thetourguy.com/wp-content/uploads/2023/02/How-to-see-the-northern-lights-in-iceland.jpg",
+    "price": 4000,
+    "rating": 4.9,
+    "feedback": "Magical and unforgettable experience."
+  }
+]

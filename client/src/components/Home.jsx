@@ -3,6 +3,9 @@ import Hashtags from './Hashtags'
 import Hero from '../assets/Hero.png'
 import { FaArrowRight } from "react-icons/fa6";
 import { Link } from 'react-router-dom'
+import { CiPlane } from "react-icons/ci";
+import { FcCurrencyExchange } from "react-icons/fc";
+
 
 function Home() {
   return (
@@ -22,28 +25,21 @@ function Home() {
           </p>
 
           <div className="flex justify-center lg:justify-start items-center space-x-4 pt-4">
-            <Link to='/travel_budjet-planner' className="bg-white text-black px-6 md:px-8 py-2 md:py-3 rounded-full font-medium flex items-center">
-              GET STARTED <span className='ml-4 bg-[#8b7fdb]  rounded-full text-white p-1'><FaArrowRight className='' /></span>
+            <Link to='/travel_planner' className="bg-white text-black px-6 md:px-8 py-2 md:py-3 rounded-full font-medium flex items-center">
+              DISCOVER TRIP <span className='ml-4 bg-[#8b7fdb]  rounded-full text-white p-1'><FaArrowRight className='' /></span>
             </Link>
           </div>
 
           {/* App Store and Play Store Buttons */}
           <div className="flex justify-center lg:justify-start space-x-4 mt-8 md:mt-16">
-            <a href="#" className="flex items-center space-x-2 bg-[#8b7fdb] rounded-full px-4 md:px-6 py-2">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M5 3L19 12L5 21V3Z" fill="white" />
-              </svg>
-              <span>Google Play</span>
-            </a>
-            <a href="#" className="flex items-center space-x-2 bg-[#8b7fdb] rounded-full px-4 md:px-6 py-2">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
-                  fill="white"
-                />
-              </svg>
-              <span>App Store</span>
-            </a>
+            <Link to="/travel_budjet-planner" className="flex items-center space-x-2 bg-[#8b7fdb] rounded-full px-4 md:px-6 py-2">
+              <CiPlane />
+              <span>Budjet Planner</span>
+            </Link>
+            <Link to="/exchange" className="flex items-center space-x-2 bg-[#8b7fdb] rounded-full px-4 md:px-6 py-2">
+              <FcCurrencyExchange />
+              <span>Currency Exchange</span>
+            </Link>
           </div>
         </div>
 

@@ -10,7 +10,7 @@ export default function About() {
   useEffect(() => {
     const fetchFaqs = async () => {
       try {
-        const response = await axios.get('https://b43-web-216-web-project-211-1.onrender.com/questions');
+        const response = await axios.get('https://b43-web-216-web-project-211.onrender.com/questions');
         setFaqs(response.data.questioneries);
         setLoading(false);
       } catch (error) {

@@ -46,8 +46,8 @@ export const LogInUsr = async (req, res) => {
       token: token,
       user: {
         id: user._id,
+        username: user.username,
         email: user.email,
-        username: user.username
       }
     });
 
@@ -56,3 +56,13 @@ export const LogInUsr = async (req, res) => {
     res.status(500).json({ message: 'Server error. Please try again.' });
   }
 };
+
+
+// LogOut User
+export const LogoutUser = async (req, res) => {
+  try {
+
+  } catch (error) {
+
+  }
+}

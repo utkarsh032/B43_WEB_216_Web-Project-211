@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import Logo from '../assets/Travel & Resort.png';
 
 // Constants for repeated styles and links
@@ -16,12 +16,31 @@ const navLinks = [
   { to: '/support', text: 'Support' },
 ];
 
-const authButtons = [
-  { path: '/signin', text: 'Login', onClick: () => console.log('Login clicked') },
-  { path: '/signup', text: 'Signup', onClick: () => console.log('Signup clicked') },
-];
-
 function Navbar() {
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [username, setUsername] = useState('');
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    // Check if the user is authenticated
+    const token = localStorage.getItem('token');
+    const storedUsername = localStorage.getItem('username');
+
+    if (token && storedUsername) {
+      setIsAuthenticated(true);
+      setUsername(storedUsername);
+    } else {
+      setIsAuthenticated(false);
+    }
+  }, []);
+
+  const handleLogout = () => {
+    localStorage.removeItem('token');
+    localStorage.removeItem('username');
+    setIsAuthenticated(false);
+    navigate('/signin');
+  };
+
   return (
     <div className='flex items-center justify-between p-4'>
       <div className='flex items-center'>
@@ -32,6 +51,7 @@ function Navbar() {
           </Link>
         </div>
         <div className={dividerStyles}></div>
+
         {/* NavLinks */}
         <nav className='flex items-center border rounded-3xl px-6 py-2'>
           {navLinks.map((link, index) => (
@@ -50,21 +70,31 @@ function Navbar() {
         </nav>
       </div>
 
-      {/* Auth Buttons */}
+      {/* Auth Section */}
       <div className='flex items-center border rounded-3xl px-6 py-2'>
-        {authButtons.map((button, index) => (
-          <React.Fragment key={button.text}>
-            <Link
-              to={button.path}
-              className={authButtonStyles(button.text === 'Login')}
-              onClick={button.onClick}
-              aria-label={button.text}
+        {isAuthenticated ? (
+          <>
+            <span className='text-black px-4 border rounded-full font-bold py-1'>👤 {username}</span>
+            <div className={dividerStyles}></div>
+            <button
+              onClick={handleLogout}
+              className={authButtonStyles(true)}
+              aria-label='Logout'
             >
-              {button.text}
+              Logout
+            </button>
+          </>
+        ) : (
+          <>
+            <Link to='/signin' className={authButtonStyles(true)} aria-label='Login'>
+              Login
             </Link>
-            {index < authButtons.length - 1 && <div className={dividerStyles} />}
-          </React.Fragment>
-        ))}
+            <div className={dividerStyles}></div>
+            <Link to='/signup' className={authButtonStyles(false)} aria-label='Signup'>
+              Signup
+            </Link>
+          </>
+        )}
       </div>
     </div>
   );

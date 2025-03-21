@@ -4,6 +4,7 @@ import Logo from '../../assets/Travel & Resort.png';
 import { Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FaFacebook, FaTwitter } from "react-icons/fa";
+import { API_URL } from '../../API/API';
 
 export default function SignUpForm() {
   const [formData, setFormData] = useState({ username: '', email: '', password: '' });
@@ -27,7 +28,7 @@ export default function SignUpForm() {
     e.preventDefault();
 
     try {
-      const response = await axios.post('https://b43-web-216-web-project-211-1.onrender.com/api/signup', formData);
+      const response = await axios.post(`${API_URL}/api/signup`, formData);
       console.log('Response:', response.data);
 
       // Save the username in localStorage

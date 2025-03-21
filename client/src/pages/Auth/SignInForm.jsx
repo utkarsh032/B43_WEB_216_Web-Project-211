@@ -4,6 +4,7 @@ import Logo from '../../assets/Travel & Resort.png';
 import { Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FaFacebook, FaTwitter } from "react-icons/fa";
+import { API_URL } from '../../API/API';
 
 export default function SignInForm() {
   const [formData, setFormData] = useState({ email: '', password: '' });
@@ -22,7 +23,7 @@ export default function SignInForm() {
     setError('');
 
     try {
-      const response = await axios.post('https://b43-web-216-web-project-211.onrender.com/api/signin', formData);
+      const response = await axios.post(`${API_URL}/api/signin`, formData);
 
       if (response.data && response.data.user) {
         const { token, user } = response.data;

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import TripList from './TripList';
+import { API_URL } from '../../API/API';
 
 const TripDetail = () => {
   const { id } = useParams();
@@ -12,7 +13,7 @@ const TripDetail = () => {
   useEffect(() => {
     const fetchTrip = async () => {
       try {
-        const response = await fetch(`https://b43-web-216-web-project-211.onrender.com/trips/${id}`);
+        const response = await fetch(`${API_URL}${id}`);
         if (!response.ok) {
           throw new Error('Failed to fetch trip');
         }

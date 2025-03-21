@@ -1,11 +1,13 @@
-import mongoose from "mongoose"
+import { connect } from "mongoose";
+import "dotenv/config";
 
-// Database Connection
+const MDBS_URL = process.env.MDBS_URL;
+
 export const dbConnection = async () => {
   try {
-    await mongoose.connect('mongodb://localhost:27017/travel')
-    console.log('MongoDB Connection SuccessFully')
+    await connect(`${MDBS_URL}/travel`);
+    console.log("Database connected successfuly: ", `${MDBS_URL}/travel`);
   } catch (error) {
-    console.error('Server Connection Failed')
+    console.log(error.message);
   }
 }

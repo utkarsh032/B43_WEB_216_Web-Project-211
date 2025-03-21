@@ -27,7 +27,7 @@ export default function SignUpForm() {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:3000/api/signup', formData);
+      const response = await axios.post('https://b43-web-216-web-project-211.onrender.com/api/signup', formData);
       console.log('Response:', response.data);
 
       // Save the username in localStorage

@@ -12,7 +12,7 @@ const TripDetail = () => {
   useEffect(() => {
     const fetchTrip = async () => {
       try {
-        const response = await fetch(`http://localhost:3000/trips/${id}`);
+        const response = await fetch(`https://b43-web-216-web-project-211.onrender.com/trips/${id}`);
         if (!response.ok) {
           throw new Error('Failed to fetch trip');
         }

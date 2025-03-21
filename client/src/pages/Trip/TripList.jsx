@@ -22,7 +22,7 @@ const TripList = () => {
   useEffect(() => {
     const fetchTrips = async () => {
       try {
-        const response = await fetch('http://localhost:3000/trips');
+        const response = await fetch('https://b43-web-216-web-project-211.onrender.com/trips');
         if (!response.ok) {
           throw new Error('Failed to fetch trips');
         }
@@ -41,7 +41,7 @@ const TripList = () => {
   useEffect(() => {
     const applyFilters = async () => {
       try {
-        const response = await fetch('http://localhost:3000/trips');
+        const response = await fetch('https://b43-web-216-web-project-211.onrender.com/trips');
         const data = await response.json();
 
         let filteredTrips = data;

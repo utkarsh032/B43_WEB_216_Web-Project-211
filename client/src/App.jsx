@@ -9,6 +9,7 @@ import SignUpForm from './pages/Auth/SignUpForm';
 import SignInForm from './pages/Auth/SignInForm';
 import MainLayout from './MainLayout';
 import Footer from './components/Footer';
+import TravelBudgetPlanner from './pages/TravelBudgetPlanner';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/exchange" element={<CurrencyConverter />} />
         <Route path="/travel" element={<TravelStories />} />
         <Route path="/about" element={<About />} />
+        <Route path="/travel_budjet-planner" element={<TravelBudgetPlanner />} />
         <Route path="/signup" element={<SignUpForm />} />
         <Route path="/signin" element={<SignInForm />} />
       </Routes>

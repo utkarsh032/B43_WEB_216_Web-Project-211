@@ -36,7 +36,7 @@ export default function TravelStories() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentType((prev) => (prev + 1) % userTypes.length);
-    }, 3000); // Cycle every 3 seconds
+    }, 3000);
     return () => clearInterval(interval);
   }, []);
 

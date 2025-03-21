@@ -1,7 +1,8 @@
 import React from 'react'
 import Hashtags from './Hashtags'
 import Hero from '../assets/Hero.png'
-import CurrencyConverter from '../pages/CurrencyConverter/CurrencyConverter'
+import { FaArrowRight } from "react-icons/fa6";
+import { Link } from 'react-router-dom'
 
 function Home() {
   return (
@@ -21,20 +22,9 @@ function Home() {
           </p>
 
           <div className="flex justify-center lg:justify-start items-center space-x-4 pt-4">
-            <button className="bg-white text-black px-6 md:px-8 py-2 md:py-3 rounded-full font-medium flex items-center">
-              GET STARTED
-              <div className="ml-4 bg-[#8b7fdb] rounded-full p-2">
-                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    d="M5 12H19M19 12L12 5M19 12L12 19"
-                    stroke="white"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </div>
-            </button>
+            <Link to='/travel_budjet-planner' className="bg-white text-black px-6 md:px-8 py-2 md:py-3 rounded-full font-medium flex items-center">
+              GET STARTED <span className='ml-4 bg-[#8b7fdb]  rounded-full text-white p-1'><FaArrowRight className='' /></span>
+            </Link>
           </div>
 
           {/* App Store and Play Store Buttons */}

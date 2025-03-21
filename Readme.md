@@ -42,6 +42,9 @@ TravelFauget is a modern travel planning application designed to help travelers 
 ### 🔄 Auth Page
 ![Currency Converter](./client/src/assets/Auth.png)
 
+### 🔄 Travel Budjet Planner Page
+![Currency Converter](./client/src/assets/TravelBudjetPlanner.png)
+
 ---
 
 ## 🛠️ Installation & Setup

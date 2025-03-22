@@ -1,10 +1,9 @@
 # 🌍 TravelFauget - Your Ultimate Travel Companion 🚀
+## 🔗 **Live Demo:** https://b43-web-216-web-project-211-1.onrender.com
 
 ![TravelFauget](./client/src/assets/UI.png)
 
 TravelFauget is a modern travel planning application designed to help travelers explore new destinations, manage bookings, and access currency conversion effortlessly.
-
-🔗 **Live Demo:** [TravelFauget]()  
 
 ---
 
